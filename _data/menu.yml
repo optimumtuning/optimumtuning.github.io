@@ -23,6 +23,7 @@ main:
   - name: Network
   - name: Gallery
   - name: FAQ
+    url: /tabs/faq/
   - name: Contact
 
 
