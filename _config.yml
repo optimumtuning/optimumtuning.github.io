@@ -127,7 +127,7 @@ logo:
   logo_image: assets/images/logo/black-ot.png
   logo_image_mobile: assets/images/logo/black-ot.png
   logo_image_invert: assets/images/logo/white-ot-invert.png
-  logo_image_invert_mobile: assets/images/logo/white-mobile.png
+  logo_image_invert_mobile: assets/images/logo/white-ot-invert.png
   logo_image_desktop_height: "50px" #30px
   logo_image_desktop_width: "250px" #132px
   logo_image_mobile_height: "60px" #30px
