@@ -1,5 +1,5 @@
 ---
-title: "Branding"
+title: "Dyno-Results"
 description: "The expression of a brand including its name, trademark, and visual appearance."
 date: 2019-10-03
 weight: 3

@@ -8,7 +8,7 @@ header_transparent: true
 hero:
   enabled: true
   heading: "Services"
-  sub_heading: "We offer a complete range of digital services."
+  sub_heading: "pages > services."
   text_color: "#FFFFFF"
   background_color: false
   background_gradient: true
@@ -54,11 +54,11 @@ outro:
   align: left
   image: false
   heading: "Ready to get started?"
-  sub_heading: "Contact us today for a free quote!"
+  sub_heading: "Contact us today!"
   buttons:
     enabled: true
     list:
-      - text: "Get A Quote"
+      - text: "Contact"
         url: "/contact"
         external: false
         fa_icon: false

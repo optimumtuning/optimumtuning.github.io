@@ -7,11 +7,11 @@ main:
     weight: 1
     child:
       - name: "Tuning Services" #Web Development
-        url: /services/web-development/
+        url: /services/tuning-services/
       - name: "Custom Tuning" #UX
-        url: /services/user-experience/
+        url: /services/custom-tuning/
       - name: "Dyno Results" #Branding
-        url: /services/branding/
+        url: /services/dyno-results/
 #      - name: "Web Design"
 #        url: /services/web-design/
 #      - name: "SEO"
