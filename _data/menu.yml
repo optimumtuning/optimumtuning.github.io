@@ -25,6 +25,7 @@ main:
   - name: FAQ
     url: /tabs/faq/
   - name: Contact
+    url: /contact/
 
 
 #  - name: Projects

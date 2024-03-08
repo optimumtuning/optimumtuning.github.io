@@ -33,46 +33,72 @@ body_classes: page-contact
 
 <!-- formcarry template code -->
 
-<section class="formcarry-container">
-  <form action="https://formspree.io/f/mpzvldaq" method="POST" enctype="multipart/form-data">
-    
-    <div class="formcarry-block">
-      <label for="fc-generated-1-name">Full Name</label>
-      <input type="text" name="Name" id="fc-generated-1-name" placeholder="Your first and last name" />
-    </div>
-  	
-    <div class="formcarry-block">
-      <label for="fc-generated-1-email">Email Address</label>
-      <input type="email" name="Email" id="fc-generated-1-email" placeholder="john@doe.com" />
-    </div>
-    
-    <div class="formcarry-block">
-      <label for="fc-generated-1-name">Phone Number</label>
-      <input type="tel" name="Phone Number" id="fc-generated-1-phone-number" placeholder="xxx-xxx-xxxx" />
-    </div>
 
-  	<div class="formcarry-block">
-      <label for="fc-generated-1-vehicle">Vehicle</label>
-      <input type="text" name="Vehicle" id="fc-generated-1-vehicle" placeholder="Year/Make/Model/Transmission" />
-    </div>
-
-    <div class="formcarry-block">
-      <label for="fc-generated-1-location">Location</label>
-      <input type="text" name="Location" id="fc-generated-1-location" placeholder="General location" />
-    </div>
+<div class="section pt-0">
+  <div class="container">
+    <div class="row justify-content-between">
+      <!-- Title -->
+      
 
 
-    <div class="formcarry-block">
-      <label for="fc-generated-1-message">Your message</label>
-      <textarea name="message" name="Message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+      <!-- Form Container -->
+      <div class="col-12 col-lg-6">
+        <h2 class="text-center">Let's Connect!</h2> <!--Title-->
+        <section class="formcarry-container">
+          <form action="https://formspree.io/f/mpzvldaq" method="POST" enctype="multipart/form-data">
+            <!-- Your form content -->
+            <div class="formcarry-block">
+              <label for="fc-generated-1-name">Full Name</label>
+              <input type="text" name="Name" id="fc-generated-1-name" placeholder="Your first and last name" />
+            </div>
+            <div class="formcarry-block">
+              <label for="fc-generated-1-email">Email Address</label>
+              <input type="email" name="Email" id="fc-generated-1-email" placeholder="john@doe.com" />
+            </div>
+            <div class="formcarry-block">
+              <label for="fc-generated-1-phone">Phone Number</label>
+              <input type="tel" name="Phone Number" id="fc-generated-1-phone-number" placeholder="xxx-xxx-xxxx" />
+            </div>
+            <div class="formcarry-block">
+              <label for="fc-generated-1-vehicle">Vehicle</label>
+              <input type="text" name="Vehicle" id="fc-generated-1-vehicle" placeholder="Year/Make/Model/Transmission" />
+            </div>
+            <div class="formcarry-block">
+              <label for="fc-generated-1-location">Location</label>
+              <input type="text" name="Location" id="fc-generated-1-location" placeholder="General location" />
+            </div>
+            <div class="formcarry-block">
+              <label for="fc-generated-1-message">Your message</label>
+              <textarea name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+            </div>
+            <div class="formcarry-block">  
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Contact Information Container -->
+      <div class="col-12 col-lg-6">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-AzZGJy48Ae13SfYxR6Xz0wYRZsMTL1zHZaRtM3C1qF7eHZ3aErmLhh0WpSzg/sPq3v6LRRc4h0Sbvi5qRggwYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <div class="contact-info" style="margin-top: 100px;">
+          <h2>Optimum Tuning</h2>
+          <p style="color: gray;"><strong></strong> Grand Rapids, Michigan</p>
+          <p><strong></strong> Mobile tuning service throughout the state of Michigan</p>
+          <p><strong></strong> Optimumtuning@gmail.com</p>
+          <p><strong></strong> (616) 965-1765</p>
+        </div>
+      </div>
     </div>
-  	
-    <div class="formcarry-block">  
-      <button type="submit">Send</button>
-    </div>
-  
-  </form>
-</section>
+  </div>
+</div>
+
+
+
+
+
+
 
 <style>
   
@@ -88,7 +114,7 @@ body_classes: page-contact
       line-height: 24px;
       letter-spacing: -0.01em;
 
-      width: 350px;
+      width: 400px;
 
       /* NORMAL */
       --fc-normal-filed-bg-color: #F7F9FC;
@@ -248,30 +274,10 @@ body_classes: page-contact
     /*=====  End of Fields  ======*/
 </style>
 
-
-
-
-
-
-
-
-
 <div class="section pt-0">
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-lg-8">
-       <!-- 
-        
-        {% if site.contact_form.use_netlify_form %}
-          {% include framework/form-contact-netlify.html %}
-        {% elsif site.contact_form.use_formspree_form and site.contact_form.formspree_endpoint %}
-          {% include framework/form-contact-formspree.html %}
-        {% endif %}
-      </div>
-      <div class="col-12 col-lg-4">
-        {% include framework/contact.html %}
-
-      -->  
       </div>
     </div>
   </div>
