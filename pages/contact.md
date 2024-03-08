@@ -5,7 +5,8 @@ body_classes: page-contact
 
 header_transparent: false
 
-description: "Questions? Please read the FAQ prior to submitting"
+description: Please read the FAQ prior to submitting
+
 image: "/assets/images/gen/content/content-5.webp"
 
 hero:
