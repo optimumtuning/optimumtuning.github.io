@@ -131,7 +131,7 @@ logo:
   logo_image_desktop_height: "50px" #30px
   logo_image_desktop_width: "250px" #132px
   logo_image_mobile_height: "60px" #30px
-  logo_image_mobile_width: "150px" #34px
+  logo_image_mobile_width: "180px" #34px
   show_logo_image_on_mobile: true
   show_logo_image_on_desktop: true
   show_logo_text_on_mobile: false
