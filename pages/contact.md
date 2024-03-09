@@ -26,6 +26,11 @@ hero:
   side_panel_width: "10%"
 
 ---
+.page-contact a[href="/tabs/faq"] {
+    color: inherit;
+}
+
+
 
 <style>
   .overlay {
