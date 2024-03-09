@@ -11,7 +11,7 @@ image: "/assets/tacoma/0X0A3506_700x.webp"
 
 
 hero:
-  enabled: false
+  enabled: true
   heading: "About Us"
   sub_heading: "Business plan hackathon handshake responsive web design."
   background_image: true
