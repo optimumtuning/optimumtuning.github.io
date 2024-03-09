@@ -5,7 +5,7 @@ body_classes: page-contact
 
 header_transparent: false
 
-description: Please read the FAQ prior to submitting
+description: Please read the <strong><a href="/tabs/faq">FAQ</a></strong> prior to submitting
 image: "/assets/tacoma/0X0A3506_700x.webp"
 
 
