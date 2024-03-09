@@ -17,9 +17,9 @@ hero:
   background_image: true
   text_color: "#FFFFFF"
   background_color: ""
-  background_gradient: true
+  background_gradient: false
   background_image: "/assets/tacoma/0X0A3506_700x.webp"
-  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  background_image_blend_mode: normal # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
   height: "300px"
@@ -32,19 +32,6 @@ hero:
 
 
 
-<style>
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
-    z-index: 1; /* Ensure it's above the image */
-  }
-</style>
-
-<div class="overlay"></div>
 
 
 hero:
