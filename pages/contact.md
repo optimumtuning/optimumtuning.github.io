@@ -3,11 +3,11 @@ layout: contact
 title: Contact
 body_classes: page-contact
 
-header_transparent: false
+header_transparent: true
 
 description: Please read the FAQ prior to submitting
 
-image: "/assets/yotawerx_logo/YotaWerx_Tuning_logo_highres_circlegrey.png"
+image: "/assets/3D_Yotawerx_Transparente.png"
 
 
 
@@ -16,9 +16,14 @@ hero:
   heading: "About Us"
   sub_heading: "Business plan hackathon handshake responsive web design."
   background_image: true
-  background_image_blend_mode: overlay
-  full_height_mobile: false
-  height: "200px"
+  text_color: "#FFFFFF"
+  background_color: ""
+  background_gradient: true
+  background_image: "/assets/3D_Yotawerx_Transparente.png"
+  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  fullscreen_mobile: true
+  fullscreen_desktop: false
+  height: "300px"
 
 ---
 
@@ -31,7 +36,7 @@ hero:
   text_color: "#FFFFFF"
   background_color: ""
   background_gradient: true
-  background_image: "/assets/yotawerx_logo/2D_Yotawerx_Transparente.png"
+  background_image: "/assets/3D_Yotawerx_Transparente.png"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
