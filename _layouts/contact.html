@@ -31,6 +31,10 @@ body_classes: page-contact
   </div>
 {% endif %}
 
+
+
+
+
 <!-- formcarry template code -->
 
 
@@ -44,15 +48,15 @@ body_classes: page-contact
           <form action="https://formspree.io/f/mpzvldaq" method="POST" enctype="multipart/form-data">
             <!-- Your form content -->
             <div class="formcarry-block">
-              <label for="fc-generated-1-name">Name*</label>
+              <label for="fc-generated-1-name">Name<span class="required"></span></label>
               <input type="text" name="Name" id="fc-generated-1-name" placeholder="Your first and last name" required/>
             </div>
             <div class="formcarry-block">
-              <label for="fc-generated-1-email">Email Address*</label>
+              <label for="fc-generated-1-email">Email Address<span class="required"></span></label>
               <input type="email" name="Email" id="fc-generated-1-email" placeholder="john@doe.com" required/>
             </div>
             <div class="formcarry-block">
-              <label for="fc-generated-1-phone">Phone Number*</label>
+              <label for="fc-generated-1-phone">Phone Number<span class="required"></span></label>
               <input type="tel" name="Phone Number" id="fc-generated-1-phone-number" placeholder="xxx-xxx-xxxx" required/>
             </div>
             <div class="formcarry-block">
@@ -64,7 +68,7 @@ body_classes: page-contact
               <input type="text" name="Location" id="fc-generated-1-location" placeholder="General location" />
             </div>
             <div class="formcarry-block">
-              <label for="fc-generated-1-message">Your message*</label>
+              <label for="fc-generated-1-message">Your message<span class="required"></span></label>
               <textarea name="message" id="fc-generated-1-message" placeholder="Enter your message..."required></textarea>
             </div>
             <div class="formcarry-block">  
@@ -122,6 +126,15 @@ body_classes: page-contact
   </div>
 </div>
 
+
+<!--Red *-->
+<style>
+  .required::after {
+      content: "*";
+      color: red;
+      margin-left: 3px; /* Adjust spacing between label and asterisk */
+  }
+</style>
 
 
 <!--Prevent link from changing color-->
