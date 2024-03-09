@@ -2,16 +2,14 @@
 layout: contact
 title: Contact
 body_classes: page-contact
-
 header_transparent: false
-
 description: Please read the <strong><a href="/tabs/faq">FAQ</a></strong> prior to submitting
 image: "/assets/tacoma/0X0A3506_700x.webp"
 
 
 
 hero:
-  enabled: true
+  enabled: false
   heading: "About Us"
   sub_heading: "Business plan hackathon handshake responsive web design."
   background_image: true
@@ -26,9 +24,7 @@ hero:
   side_panel_width: "10%"
 
 ---
-.page-contact a[href="/tabs/faq"] {
-    color: inherit;
-}
+
 
 
 
