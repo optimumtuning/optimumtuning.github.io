@@ -45,15 +45,15 @@ body_classes: page-contact
             <!-- Your form content -->
             <div class="formcarry-block">
               <label for="fc-generated-1-name">Name*</label>
-              <input type="text" name="Name" id="fc-generated-1-name" placeholder="Your first and last name" />
+              <input type="text" name="Name" id="fc-generated-1-name" placeholder="Your first and last name" required/>
             </div>
             <div class="formcarry-block">
               <label for="fc-generated-1-email">Email Address*</label>
-              <input type="email" name="Email" id="fc-generated-1-email" placeholder="john@doe.com" />
+              <input type="email" name="Email" id="fc-generated-1-email" placeholder="john@doe.com" required/>
             </div>
             <div class="formcarry-block">
               <label for="fc-generated-1-phone">Phone Number*</label>
-              <input type="tel" name="Phone Number" id="fc-generated-1-phone-number" placeholder="xxx-xxx-xxxx" />
+              <input type="tel" name="Phone Number" id="fc-generated-1-phone-number" placeholder="xxx-xxx-xxxx" required/>
             </div>
             <div class="formcarry-block">
               <label for="fc-generated-1-vehicle">Vehicle</label>
@@ -65,7 +65,7 @@ body_classes: page-contact
             </div>
             <div class="formcarry-block">
               <label for="fc-generated-1-message">Your message*</label>
-              <textarea name="message" id="fc-generated-1-message" placeholder="Enter your message..."></textarea>
+              <textarea name="message" id="fc-generated-1-message" placeholder="Enter your message..."required></textarea>
             </div>
             <div class="formcarry-block">  
               <button type="submit">Submit</button>
@@ -112,15 +112,17 @@ body_classes: page-contact
 </div>
 
 <!--Map-->
-
 <div class="section">
   <div class="container">
-    <h2 class="text-center">Frequent Tuning Locations</h2>
+    <h2 class="text-center" style="margin-bottom: 30px;">Frequent Tuning Locations</h2>
+    <hr style="width: 10%; margin: 0 auto 30px;"> <!-- Adjust width and position -->
     <div class="text-center">
       <iframe src="https://www.google.com/maps/d/u/5/embed?mid=1ptngDdVgxl9HaWQ7X6bCDauA2mOVrjE&ehbc=2E312F" width="100%" height="500"></iframe>
     </div>
   </div>
 </div>
+
+
 
 <!--Prevent link from changing color-->
 <style>
