@@ -21,6 +21,7 @@ main:
 
 #Created new Tab
   - name: Network
+    url: /tabs/network/
   - name: Gallery
   - name: FAQ
     url: /tabs/faq/
