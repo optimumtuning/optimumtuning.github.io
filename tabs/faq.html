@@ -10,33 +10,30 @@ layout: default
   <title>Example Page with Banner</title>
   <style>
     .banner {
-      background-image: url('/assets/tacoma/0X0A3506_700x.webp'); /* Set the background image */
-      background-size: cover; /* Cover the entire area of the banner */
+      background-image: url('/assets/yotawerx_logo/3D_Yotawerx_Transparente.png'); /* Set the background image */
+      background-size: 35% auto; /* Cover the entire area of the banner */
+      background-repeat: no-repeat; /* Prevent repeating the background image */
       background-position: center; /* Center the background image */
-      color: #fff; /* Text color */
-      padding: 100px; /* Padding inside the banner */
+      
+      padding: 200px; /* Padding inside the banner */
       text-align: center; /* Center-align the text */
+      position: relative; /* Set the position to relative for absolute positioning of text */
+    }
+    .banner h1 {
+      position: absolute; /* Set the position to absolute */
+      bottom: 0; /* Align the text at the bottom */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center horizontally */
     }
     
-    .banner h2 {
-      font-size: 36px; /* Adjust the font size */
-      font-weight: bold; /* Apply bold font weight */
-      letter-spacing: 2px; /* Add letter spacing */
-      
-      
-    }
   </style>
 </head>
 <body>
 
 <div class="banner">
-  <h2><strong>FAQS</strong></h2>
+  <h1><strong>Frequently Asked Questions</strong></h1>
   <p></p>
 </div>
-
-<!-- Rest of your HTML content goes here -->
-
-</body>
 
 
 
@@ -57,7 +54,7 @@ layout: default
     .faq-section {
       width: 100%;
       max-width: 800px;
-      margin: 100px auto; /* Changed margin to center vertically and horizontally */
+      margin: 10px auto; /* Changed margin to center vertically and horizontally */
     }
     .faq-question {
       border-bottom: 1px solid #ccc;
@@ -69,7 +66,8 @@ layout: default
 <body>
 
 <div class="faq-section">
-  <h2 style="text-align: center; margin-bottom: 20px;">Frequently Asked Questions</h2>
+    <h5 style="text-align: center; margin-bottom: 30px; color: rgb(123, 123, 124);">Please <strong style="color: rgb(0, 0, 0); font-weight: bold;">CONTACT</strong> us if you have additional questions</h5>
+
 
   <div class="faq-question">
     <details>
