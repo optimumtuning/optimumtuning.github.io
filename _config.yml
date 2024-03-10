@@ -88,8 +88,8 @@ category_dir: category
 
 colors:
   #light-mode colors
-  primary_bg: "#283618" #2b3af7
-  primary_bg_2: "#606c38" #424ff8
+  primary_bg: " #34495e" #2b3af7
+  primary_bg_2: "#5d6d7e" #424ff8
   primary_bg_3: "#702bf7"
   primary_text: "#fdfcf9"
   base_bg: "#ffffff"
@@ -194,9 +194,9 @@ footer:
   enable_menu_footer_primary: true
   enable_menu_footer_secondary: true
   enable_menu_footer_tertiary: true
-  footer_primary_menu_title: "Product"
-  footer_secondary_menu_title: "Company"
-  footer_tertiary_menu_title: "Other"
+  footer_primary_menu_title: "Home"
+  #footer_secondary_menu_title: "Company"
+  #footer_tertiary_menu_title: "Other"
 
 bottom:
   enable_bottom: true # show/hide the entire bottom (below the footer)

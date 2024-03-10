@@ -8,13 +8,13 @@ meta_title: Jekyll Advance - Premium Jekyll Theme
 
 hero:
   enabled: true
-  heading: "Jekyll Advance"
-  sub_heading: "Built using highly configurable sections, Advance is a multi-purpose premium Jekyll theme. Modern design, clean code and highly configurable."
+  heading: "Optimum Tuning"
+  sub_heading: "Authorized YotaWerx Tuning Partner"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
-  background_gradient: true
-  background_image: "/assets/images/gen/home/home-1-large.webp"
-  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  background_gradient: false
+  background_image: "/assets/arb-tacoma/car32546.jpg" #images/gen/home/home-1-large.webp
+  background_image_blend_mode: screen # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
   height: "660px"
@@ -49,8 +49,8 @@ services:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/gen/content/content-5-thumbnail.webp"
-  heading: "We've helped hundreds of people grow their business online."
+  image: "/assets/yotawerx_logo/2D_Yotawerx_PNG3500x2500.png"
+  heading: "YotaWerx Tuning"
   sub_heading: "Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home."
   features:
     enabled: false
@@ -66,7 +66,7 @@ intro:
   buttons:
     enabled: true
     list:
-      - text: "About Us"
+      - text: "YoterWerx Tuning"
         url: "/about"
         external: false
         fa_icon: ""
@@ -80,7 +80,7 @@ partners:
   sort: "weight" # 'date'
 
 projects:
-  enabled: true
+  enabled: false
   heading: "Our Projects"
   sub_heading: ""
   limit: 2
@@ -110,7 +110,7 @@ outro:
         size: "large"
 
 posts:
-  enabled: true
+  enabled: false
   heading: "Latest Posts"
   sub_heading: ""
   limit: 3

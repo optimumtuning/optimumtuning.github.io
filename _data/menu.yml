@@ -23,6 +23,7 @@ main:
   - name: Network
     url: /tabs/network/
   - name: Gallery
+    url: /
   - name: FAQ
     url: /tabs/faq/
   - name: Contact
@@ -64,32 +65,38 @@ footer_primary:
   - name: Services
     url: /services/
     weight: 2
-  - name: Projects
-    url: /projects/
+  - name: Network
+    url: /tabs/network/
     weight: 3
-  - name: Team
-    url: /team/
+  - name: Gallery
+    url: /
     weight: 4
-footer_secondary:
-  - name: Blog
-    url: /blog/
-    weight: 1
-  - name: About
-    url: /about/
-    weight: 2
+  - name: FAQ
+    url: /tabs/faq/
+    weight: 5
   - name: Contact
-    url: /contact/
-    weight: 3
-footer_tertiary:
-  - name: Privacy Policy
-    url: /privacy-policy/
-    weight: 1
-  - name: Terms and Conditions
-    url: /terms-and-conditions/
-    weight: 2
-  - name: Buy Now
-    url: https://www.zerostatic.io/theme/jekyll-advance/
-    weight: 3
+    url: /contact
+    weight: 6
+#footer_secondary:
+#  - name: Blog
+#    url: /blog/
+#    weight: 1
+#  - name: About
+#    url: /about/
+#    weight: 2
+#  - name: Contact
+#    url: /contact/
+#    weight: 3
+#footer_tertiary:
+#  - name: Privacy Policy
+#    url: /privacy-policy/
+#    weight: 1
+#  - name: Terms and Conditions
+#    url: /terms-and-conditions/
+#    weight: 2
+#  - name: Buy Now
+#    url: https://www.zerostatic.io/theme/jekyll-advance/
+#    weight: 3
 bottom:
   - name: Privacy Policy
     url: /privacy-policy/

@@ -3,17 +3,17 @@ layout: list
 title: Services
 description: "A selection of our digital services"
 permalink: "/services/"
-header_transparent: true
+header_transparent: false
 
 hero:
   enabled: true
   heading: "Services"
   sub_heading: "pages > services."
   text_color: "#FFFFFF"
-  background_color: false
-  background_gradient: true
-  background_image: "/assets/images/gen/home/home-8-large.webp"
-  background_image_blend_mode: overlay # "overlay", "multiply", "screen"
+  background_color: true
+  background_gradient: false
+  background_image: "/assets/tacoma/bradley-dunn-EiIxw5sZiDQ-unsplash.jpg"
+  background_image_blend_mode: normal # "overlay", "multiply", "screen"
   fullscreen_mobile: false
   fullscreen_desktop: false
   height: "500px"
