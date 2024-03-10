@@ -182,7 +182,7 @@ contact_form:
   netlify_form_name: "contact"
 
 menu: 
-  show_dropdown_items_in_mobile_menu: false
+  show_dropdown_items_in_mobile_menu: true
   show_social_media_in_mobile_menu: true
 
 footer:
@@ -201,8 +201,8 @@ footer:
 bottom:
   enable_bottom: true # show/hide the entire bottom (below the footer)
   enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2023 Zerostatic Themes"
-  show_rss_icon: true
+  copyright_text: "© 2023 Optimum Tuning LLC"
+  show_rss_icon: false
 
 sidebar:
   enable_sidebar_services: true
