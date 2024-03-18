@@ -20,6 +20,7 @@ header_transparent: true
       align-items: center; /* Center vertically */
       text-align: center; /* Center-align the text */
       color: white; /* Set text color to white */
+      z-index: -1; /* Ensure text is above background */
     }
     .banner::before {
       content: ""; /* Add content to the pseudo-element */
@@ -28,7 +29,8 @@ header_transparent: true
       left: 0; /* Position from the left of the banner */
       width: 100%; /* Set width to cover the entire banner */
       height: 100%; /* Set height to cover the entire banner */
-      background-color: rgba(0, 0, 0, 0); /* Set background color with opacity */
+      background-color: rgba(0, 0, 0, .2); /* Set background color with opacity */
+      z-index: -1  /* Place the background behind the image and text */
     }
     .banner h1 {
       margin: 0; /* Remove default margin */

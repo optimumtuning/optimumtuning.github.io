@@ -1,50 +1,58 @@
 ---
 layout: default
+
+header_transparent: true
+
 ---
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Example Page with Banner</title>
   <style>
     .banner {
-      background-image: url('/assets/yotawerx_logo/3D_Yotawerx_Transparente.png'); /* Set the background image */
-      background-size: cover; /* Cover the entire area of the banner */
-      background-repeat: no-repeat; /* Prevent repeating the background image */
-      background-position: center; /* Center the background image */
-      
-      padding: 100px; /* Padding inside the banner */
+      position: relative; /* Set position to relative to contain the pseudo-element */
+      background-image: url('/assets/tacoma/joshua-yu-2IKm0aYkHPk-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 60%; /* Adjust background position: horizontal 50%, vertical 80px from the top */
+      height: 40vh; /* Set the height of the banner to the full viewport height */
+      display: flex; /* Use flexbox to center items */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
       text-align: center; /* Center-align the text */
-      position: relative; /* Set the position to relative for absolute positioning of text */
+      color: white; /* Set text color to white */
+      z-index: -1; /* Ensure text is above background */
     }
     .banner h1 {
-      position: absolute; /* Set the position to absolute */
-      bottom: 0; /* Align the text at the bottom */
-      left: 50%; /* Center horizontally */
-      transform: translateX(-50%); /* Center horizontally */
+      margin: 0; /* Remove default margin */
+      font-size: 3em; /* Set font size to 3 times the default size */
     }
-    
+    .banner-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Fills the entire banner area */
+      background-color: rgba(0, 0, 0, .20); /* Set your desired background color */
+      z-index: -1  /* Place the background behind the image and text */
+    }
   </style>
 </head>
 <body>
 
 <div class="banner">
-  <h2><strong><!----></strong></h2>
+  <h1><strong>FAQ</strong></h1>
   <p></p>
+  <div class="banner-background"></div>
 </div>
 
+</body>
 
 
 
+<h1 style="padding-top: 50px; padding-bottom: 20px; text-align: center;"><strong>Frequently Asked Questions</strong></h1>
 
 
-
-
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -66,8 +74,8 @@ layout: default
 <body>
 
 <div class="faq-section">
-    <h2 style="text-align: center; margin-top: px;"><strong>FAQs</strong> </h2>
-    <hr style="width: 10%; margin: 10px auto 20px;"> <!-- Adjust width and position -->
+    <h2 style="text-align: center; margin-top: px;"><strong><!----></strong> </h2>
+    <hr style="width: 10%; margin: 5px auto 20px;"> <!-- Adjust width and position -->
     <h6 style="text-align: center; margin-bottom: 30px; color: 
         rgb(123, 123, 124);">Please <strong><a href="/contact" style="color: inherit; text-decoration: underline;">
         CONTACT</a></strong> us if you have additional questions</h6>
@@ -111,7 +119,7 @@ layout: default
     </details>
   </div>
 </div>
-
+<div style="padding-bottom: 50px"></div>
 
 <!--
 
