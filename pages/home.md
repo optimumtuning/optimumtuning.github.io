@@ -67,8 +67,8 @@ intro:
     enabled: true
     list:
       - text: "YoterWerx Tuning"
-        url: "/about"
-        external: false
+        url: "https://yotawerxtuning.com"
+        external: true
         fa_icon: ""
         size: large
         outline: false
