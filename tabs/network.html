@@ -1,68 +1,56 @@
 ---
 layout: default
+
+header_transparent: true
 ---
-
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Example Page with Banner</title>
   <style>
     .banner {
-      background-image: url('/assets/tacoma/bradley-dunn-EiIxw5sZiDQ-unsplash.jpg'); /* Set the background image */
-      background-size: cover; /* Cover the entire area of the banner */
-      background-repeat: no-repeat; /* Prevent repeating the background image */
-      background-position: center; /* Center the background image */
-      
-      padding: 100px; /* Padding inside the banner */
+      position: relative; /* Set position to relative to contain the pseudo-element */
+      background-image: url('/assets/tacoma/bradley-dunn-EiIxw5sZiDQ-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom; /* Move the background image to the bottom */
+      height: 40vh; /* Set the height of the banner to the full viewport height */
+      display: flex; /* Use flexbox to center items */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
       text-align: center; /* Center-align the text */
-      position: relative; /* Set the position to relative for absolute positioning of text */
+      color: white; /* Set text color to white */
+    }
+    .banner::before {
+      content: ""; /* Add content to the pseudo-element */
+      position: absolute; /* Set position to absolute */
+      top: 0; /* Position from the top of the banner */
+      left: 0; /* Position from the left of the banner */
+      width: 100%; /* Set width to cover the entire banner */
+      height: 100%; /* Set height to cover the entire banner */
+      background-color: rgba(0, 0, 0, 0); /* Set background color with opacity */
     }
     .banner h1 {
-      position: absolute; /* Set the position to absolute */
-      bottom: 0; /* Align the text at the bottom */
-      left: 50%; /* Center horizontally*/
-      transform: translateX(-50%); /* Center horizontally */
+      margin: 0; /* Remove default margin */
+      font-size: 3em; /* Set font size to 3 times the default size */
     }
-    
   </style>
 </head>
 <body>
 
 <div class="banner">
-  <h2><strong><!----></strong></h2>
+  <h1><strong>Network</strong></h1> 
   <p></p>
 </div>
 
+<h1 style="padding-top: 50px; padding-bottom: 20px; text-align: center;"><strong>YotaWerx Tuning Network</strong></h1>
 
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ Section</title>
-  <style>
-    .faq-section {
-      width: 100%;
-      max-width: 800px;
-      margin: 10px auto; /* Changed margin to center vertically and horizontally */
-    }
-    .faq-question {
-      border-bottom: 1px solid #ccc;
-      padding: 10px;
-     
-    }
-  </style>
-</head>
-<body>
 
 <!--Map-->
-<div class="section">
+
   <div class="container">
-    <h1 class="text-center" style="margin-bottom: 20px;">YotaWerx Tuning Network</h1>
     <hr style="width: 10%; margin: 0 auto 30px;"> <!-- Adjust width and position -->
     <div class="text-center">
       <iframe src="https://www.google.com/maps/d/embed?mid=1N0tl8rjAmM08bPGRXzrXyV4mICU4wo_Y&ehbc=2E312F" width="100%" height="500"></iframe>
     </div>
   </div>
-</div>
