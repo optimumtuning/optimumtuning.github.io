@@ -5,10 +5,14 @@
         <div class="footer-info">
           <h2>Optimum Tuning</h2>
           <p>VFTuner Pro Licensed | YotaWerx Tuning Partner</p>
-          
+          <a href="https://www.facebook.com/Optimumtuning" target="_blank">
+            <i class="fab fa-facebook" style="font-size: 30px; margin-right: 10px;"></i> 
+          </a>
+          <a href="https://www.instagram.com/Optimumtuningllc" target="_blank">
+            <i class="fab fa-instagram" style="font-size: 30px;"></i>
+          </a>
           <!-- Social media icons and dark mode switcher -->
           {% if site.footer.enable_social_media_icons and site.data.social %}
-            {% include framework/social.html %}
           {% endif %}
           {% if site.darkmode.enable_dark_mode and site.darkmode.show_dark_mode_toggle_in_footer %}
             {% include framework/dark-mode-switcher.html %}
@@ -21,12 +25,13 @@
         <h3 style="margin-bottom: 10px;"><strong>Contact Us</strong></h3>
         <p>
           <strong><i class="fas fa-envelope"></i></strong>&nbsp;
-          <a href="mailto:Optimumtuning@gmail.com">Optimumtuning@gmail.com</a>
+          <a href="mailto:Optimumtuning@gmail.com" style="font-size: 16px;">Optimumtuning@gmail.com</a>
         </p>          
         <p>
           <strong><i class="fas fa-phone"></i></strong>&nbsp;
-          <a href="tel:+16169651765">(616) 965-1765</a> <strong>(Text first)</strong>
-        </p>          
+          <a href="tel:+16169651765" style="font-size: 16px;">(616) 965-1765</a> <strong>(Text first)</strong>
+        </p>      
+        <!--
         <p>
           <strong><i class="fab fa-facebook"></i></strong>&nbsp;
           <a href="https://www.facebook.com/Optimumtuning" target="_blank">Facebook.com/Optimumtuning</a>
@@ -35,12 +40,22 @@
           <strong><i class="fab fa-instagram"></i></strong>&nbsp;
           <a href="https://www.instagram.com/Optimumtuningllc" target="_blank">Instagram.com/Optimumtuningllc</a>
         </p>
+      -->
+        <p>
+          <strong><i class="fas fa-map-marker-alt"></i></strong>&nbsp;
+          <a href="https://www.google.com/maps/d/u/5/edit?mid=1ptngDdVgxl9HaWQ7X6bCDauA2mOVrjE&ll=43.46286555011065%2C-84.78964985&z=8" 
+          target="_blank" style="font-size: 16px;">Frequent Tuning Locations</a>
+        </p>
+    
       </div>
       
       <!-- Newsletter form -->
       <div class="col-12 col-md-4 d-flex justify-content-end"> <!-- Add 'justify-content-end' class to move the content to the right -->
-        <div class="newsletter-form text-center">
-          <h2 style="margin-bottom: 10px;">Subscribe for promotions</h2>
+        <div class="newsletter-form text-left">
+          <div style="margin-left: 9%;"> <!-- Add this div to contain the text you want to shift -->
+            <h2 style="margin-bottom: 5px; margin-top: 0px; font-size: 25px; font-weight: bold;">Connect with Us</h2>
+            <p style="margin-bottom: 15px; font-size: 15px; font-weight:;">Sign Up for promotions, events and updates.</p>
+          </div>
           <form action="">
             <input type="email" name="email" id="email" placeholder="example@gmail.com" />
             <input type="submit" name="submit" value="Subscribe">
