@@ -4,15 +4,9 @@
 
         <div class="col-12 col-md-4">
           <div class="footer-info">
-            {% if site.footer.footer_title and site.footer.footer_title != "" %}
-              <h2>{{ site.footer.footer_title }}</h2>
-            {% endif %}
-
-            {% if site.footer.footer_description and site.footer.footer_description != "" %}
-              <p>{{ site.footer.footer_description }}</p>
-            {% endif %}
+              <h2>Optimum Tuning</h2>
+              <p>VFTuner Pro Licensed | YotaWerx Tuning Partner</p>
           </div>
-
           {% if site.footer.enable_social_media_icons and site.data.social %}
             {% include framework/social.html %}
           {% endif %}
@@ -20,63 +14,26 @@
             {% include framework/dark-mode-switcher.html %}
           {% endif %}
         </div>
-
-        <div class="col-12 col-md-8 mt-gutter mt-md-0">
-          <div class="row justify-content-end">
-
-            {% if site.footer.enable_menu_footer_primary %}
-              <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                <div class="footer-menu">
-                  {%  if site.footer.footer_primary_menu_title %}
-                    <h3>{{ site.footer.footer_primary_menu_title }}</h3>
-                  {% endif %}
-                  {% include framework/menu-footer.html 
-                    menu=site.data.menu.footer_primary
-                  %}
-                </div>
-              </div>
-            {% endif %}
-
-            {% if site.footer.enable_menu_footer_secondary %}
-              <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                <div class="footer-menu">
-                {%  if site.footer.footer_secondary_menu_title %}
-                  <h3>{{ site.footer.footer_secondary_menu_title }}</h3>
-                {% endif %}
-                {% include framework/menu-footer.html 
-                  menu=site.data.menu.footer_secondary
-                %}
-                </div>
-              </div>
-            {% endif %}
-
-            {% if site.footer.enable_menu_footer_tertiary  %}
-              <div class="col-12 col-md-3 mt-gutter mt-md-0">
-                <div class="footer-menu">
-                {%  if site.footer.footer_tertiary_menu_title %}
-                  <h3>{{ site.footer.footer_tertiary_menu_title }}</h3>
-                {% endif %}
-                {% include framework/menu-footer.html 
-                  menu=site.data.menu.footer_tertiary
-                %}
-                </div>
-              </div>
-            {% endif %}
-        
-          </div>
-        </div>
-      
     </div>
-    {% if site.footer.enable_contact_details %}
     <div class="row justify-content-end mt-2">
       <div class="col-12 col-md-4">
         <h3>Contact Us</h3>
-        {% include framework/contact.html
-          contact=site.data.contact
-        %}
+        <p>
+          <strong><i class="fas fa-envelope"></i></strong>&nbsp;
+          <a href="mailto:Optimumtuning@gmail.com">Optimumtuning@gmail.com</a>
+        </p>          
+        <p>
+          <strong><i class="fas fa-phone"></i></strong>&nbsp;
+          <a href="tel:+16169651765">(616) 965-1765</a> <strong>(Text first)</strong>
+        </p>          
+        <p>
+          <strong><i class="fab fa-facebook"></i></strong>&nbsp;
+          <a href="https://www.facebook.com/Optimumtuning" target="_blank">Facebook.com/Optimumtuning</a>
+        </p>
+        <p>
+          <strong><i class="fab fa-instagram"></i></strong>&nbsp;
+          <a href="https://www.instagram.com/Optimumtuningllc" target="_blank">Instagram.com/Optimumtuningllc</a>
       </div>
     </div>
-    {% endif %}
-
   </div>
 </div>
