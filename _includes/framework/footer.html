@@ -1,12 +1,12 @@
 <div class="footer">
-  <div class="container">
-    <div class="row">
-
-        <div class="col-12 col-md-4">
-          <div class="footer-info">
-              <h2>Optimum Tuning</h2>
-              <p>VFTuner Pro Licensed | YotaWerx Tuning Partner</p>
-          </div>
+  <div class="container text-left"> <!-- Add 'text-center' class to center-align the entire footer content -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <div class="footer-info">
+          <h2>Optimum Tuning</h2>
+          <p>VFTuner Pro Licensed | YotaWerx Tuning Partner</p>
+          
+          <!-- Social media icons and dark mode switcher -->
           {% if site.footer.enable_social_media_icons and site.data.social %}
             {% include framework/social.html %}
           {% endif %}
@@ -14,10 +14,11 @@
             {% include framework/dark-mode-switcher.html %}
           {% endif %}
         </div>
-    </div>
-    <div class="row justify-content-end mt-2">
+      </div>
+
+      <!-- Contact information -->
       <div class="col-12 col-md-4">
-        <h3>Contact Us</h3>
+        <h3><strong>Contact Us</strong></h3>
         <p>
           <strong><i class="fas fa-envelope"></i></strong>&nbsp;
           <a href="mailto:Optimumtuning@gmail.com">Optimumtuning@gmail.com</a>
@@ -33,6 +34,18 @@
         <p>
           <strong><i class="fab fa-instagram"></i></strong>&nbsp;
           <a href="https://www.instagram.com/Optimumtuningllc" target="_blank">Instagram.com/Optimumtuningllc</a>
+        </p>
+      </div>
+      
+      <!-- Newsletter form -->
+      <div class="col-12 col-md-4 d-flex justify-content-end"> <!-- Add 'justify-content-end' class to move the content to the right -->
+        <div class="newsletter-form">
+          <h2 style="margin-bottom: 10px;">Subscribe for promotions</h2>
+          <form action="">
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" />
+            <input type="submit" name="submit" value="Subscribe">
+          </form>
+        </div>
       </div>
     </div>
   </div>

@@ -1,0 +1,67 @@
+
+
+$inputHeight: 70px;
+$color: #3f48d159;
+
+body {
+
+  padding: 30vh 0 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 650px;
+}
+
+
+
+
+.form {
+  position: relative;
+  display: block;
+  height: $inputHeight;
+  border-radius: 0.5*$inputHeight;
+  background: white;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,.28);
+  overflow: hidden;
+  
+  input {
+    line-height: $inputHeight;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 300;
+    background: #eee;
+    letter-spacing: 0.02em;
+    
+    &:not([type=submit]) {
+      width: 100%;
+      display: block;
+      padding: 0 150px 0 30px;
+      
+    }
+    
+    &:not([type=email]) {
+      position: absolute;
+      height: $inputHeight - 20px;
+      line-height: $inputHeight - 20px;
+      top: 10px;
+      right: 10px;
+      border-radius: 0.5*($inputHeight - 20px);
+      padding: 0 25px;
+      background: lighten($color, 5%);
+      color: white;
+      cursor: pointer;
+      
+      
+      &:hover {
+        background: darken($color, 10%);
+      }
+    }
+    
+
+  }
+}
