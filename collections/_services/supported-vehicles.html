@@ -58,7 +58,14 @@ space
       <h3 class="heading" align="center">2016-2023<br>Toyota Tacoma</h3>
       <div class="padded">
           <img src="/assets/tacoma/9-3.webp" alt="Toyota Tacoma Image" >
-        
+          <ul style="list-style-type: circle; margin-left: 20px;">
+            <li>3.5L V6 (Auto + Manual)</li>
+            <li>2.7L I4 (Auto)</li>
+            <li>Magnuson Supercharger($1000)</li>
+
+
+          
+          </ul>
     
           <!-- box 1 content -->
      
@@ -89,6 +96,14 @@ space
 
 
 <style>
+
+:root {
+      --light-shadow-color: rgb(95, 90, 90); /* Light mode shadow color */
+      --dark-shadow-color: rgba(0, 0, 0, 0.5); /* Dark mode shadow color */
+    }
+
+
+
 /* container */
 .padded-boxes {
   margin: auto;
@@ -104,13 +119,25 @@ space
 .padded-boxes > * {
   width:100%;
   border-radius:.4rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px px rgba(0,0,0,0.1);
   border-radius: 10px; /* Optional: added for rounded corners */
   max-width: 330px; /* Set maximum width if needed */
   border-radius: .4rem;
   margin-bottom: 2rem; /* Add some bottom margin for spacing */
   margin-right: 2rem; /* Add margin between the boxes */
+
+
+  box-shadow: 1px 1px 5px var(--light-shadow-color);
 }
+
+
+/* Dark mode box shadow */
+.dark-mode .padded-boxes > * {
+      /* Change box-shadow to the dark mode shadow color */
+      box-shadow: 1px 1px 5px var(--dark-shadow-color);
+    }
+
+
 
 /* headings */
 .padded-boxes .heading {
@@ -119,6 +146,7 @@ space
     padding:.1rem 1rem;
     border-top-left-radius:.4rem;
     border-top-right-radius:.4rem;
+    
 }
 
 /* footer */
@@ -131,10 +159,8 @@ space
     color: inherit;
     
 }
-/* padded content */
-.padded-boxes .padded {
-    padding:.1rem 2rem;
-}
+
+
 
 .padded-boxes .padded {
   padding: 0; /* Reset padding */
@@ -147,6 +173,19 @@ space
   height: 220px; /* Set the height of the image */
 }
 
+.padded-boxes .heading br {
+    display: block;
+    margin-bottom: -5px; /* Add margin between "2016-2023" and "Toyota Tacoma" */
+}
+
+
+
+
+
+/* Custom CSS */
+.custom-bullet-points {
+    list-style-type: circle;
+}
 </style>
 
 
