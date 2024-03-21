@@ -9,7 +9,7 @@ meta_title: Jekyll Advance - Premium Jekyll Theme
 hero:
   enabled: true
   heading: "Optimum Tuning"
-  sub_heading: "Authorized YotaWerx Tuning Partner"
+  sub_heading: "We are bssed in Grand Rapids but cover " #"Authorized YotaWerx Tuning Partner"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: false
@@ -38,7 +38,7 @@ hero:
 
 services:
   enabled: true
-  heading: "Our Services"
+  heading: "Tuning"
   sub_heading: ""
   limit: 6
   sort: "weight" # 'date'
@@ -51,7 +51,7 @@ intro:
   align: left
   image: "/assets/yotawerx_logo/2D_Yotawerx_PNG3500x2500.png"
   heading: "YotaWerx Tuning"
-  sub_heading: "Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home."
+  sub_heading: "Offroad Tuning Specialist"
   features:
     enabled: false
     list:
@@ -75,7 +75,7 @@ intro:
         style: "primary"
 
 partners:
-  enabled: true
+  enabled: false
   limit: 5
   sort: "weight" # 'date'
 
@@ -95,7 +95,7 @@ outro:
   align: center
   image: false
   heading: Get Started Today
-  sub_heading: "Save time and money using this premium Jekyll theme."
+  sub_heading: "Unleash the full potential of your vehicle"
   features:
     enabled: false
     list:

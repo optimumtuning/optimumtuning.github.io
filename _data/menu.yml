@@ -2,28 +2,21 @@ main:
   - name: Home
     url: /
     weight: 1
-  - name: Services
+  - name: Tuning
     url: /services/
     weight: 1
     child:
-      - name: "Tuning Services" #Web Development
-        url: /services/tuning-services/
+      - name: "Supported Vehicles" #Web Development
+        url: /services/supported-vehicles
       - name: "Custom Tuning" #UX
-        url: /services/custom-tuning/
+        url: / #/services/custom-tuning
       - name: "Dyno Results" #Branding
-        url: /tabs/services/dyno-results/
-#      - name: "Web Design"
-#        url: /services/web-design/
-#      - name: "SEO"
-#        url: /services/seo/
-#      - name: "Software Engineering"
-#        url: /services/software-engineering/
+        url: / #/tabs/services/dyno-results/
 
-#Created new Tab
   - name: Network
     url: /tabs/network/
-  - name: Gallery
-    url: /
+#  - name: Gallery
+#    url: /
   - name: FAQ
     url: /tabs/faq/
   - name: Contact
@@ -68,9 +61,9 @@ footer_primary:
   - name: Network
     url: /tabs/network/
     weight: 3
-  - name: Gallery
-    url: /
-    weight: 4
+#  - name: Gallery
+#    url: /
+#    weight: 4
   - name: FAQ
     url: /tabs/faq/
     weight: 5
