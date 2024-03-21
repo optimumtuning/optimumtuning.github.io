@@ -1,96 +1,156 @@
 ---
-title: "Supported Vehicles"
-description: "We offers an extensive range of tuning services for Toyota and Lexus platform."
-date: 2017-11-28T15:14:54+10:00
-weight: 1
-header_transparent: true
-fa_icon: true
-icon: "assets/images/icons/icons8-source-code-100.png"
-thumbnail: "/assets/images/gen/services/service-1-thumbnail.webp"
-image: "/assets/images/gen/services/service-1.webp"
+layout: default
 
-hero:
-  enabled: true
-  heading: "Tuning Services" #"Web Development"
-  sub_heading:  "collection >web Development" #"Our experienced software engineers develop websites and desktop applications"
-  text_color: "#FFFFFF"
-  background_color: ""
-  background_gradient: true
-  background_image_blend_mode: false # "overlay", "multiply", "screen"
-  background_image: "/assets/images/gen/services/service-1-large.webp"
-  fullscreen_mobile: false
-  fullscreen_desktop: false
-  height: 400px
+header_transparent: true
 
 ---
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Page with Banner</title>
+  <style>
+    .banner {
+      position: relative; /* Set position to relative to contain the pseudo-element */
+      background-image: url('/assets/tacoma/joshua-yu-2IKm0aYkHPk-unsplash.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 60%; /* Adjust background position: horizontal 50%, vertical 80px from the top */
+      height: 40vh; /* Set the height of the banner to the full viewport height */
+      display: flex; /* Use flexbox to center items */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      text-align: center; /* Center-align the text */
+      color: white; /* Set text color to white */
+      z-index: -1; /* Ensure text is above background */
+    }
+    .banner h1 {
+      margin: 0; /* Remove default margin */
+      font-size: 3em; /* Set font size to 3 times the default size */
+    }
+    .banner-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; /* Fills the entire banner area */
+      background-color: rgba(0, 0, 0, .20); /* Set your desired background color */
+      z-index: -1  /* Place the background behind the image and text */
+    }
+  </style>
+</head>
+<body>
 
+<div class="banner">
+  <h1><strong>Supported Vehicles</strong></h1>
+  <p></p>
+  <div class="banner-background"></div>
+</div>
+
+</body>
+
+
+<!----------------------------------------------------------------------------------------->
+Test
 
 <div class="padded-boxes">
   <section>
       <h3 class="heading" align="center">2016-2023<br>Toyota Tacoma</h3>
       <div class="padded">
+        <div class="image-container">
+          <img src="/assets/tacoma/joshua-yu-2IKm0aYkHPk-unsplash.jpg" alt="Toyota Tacoma Image" class="fill-image">
+
+
+
           <ul style="list-style-type: circle;">
               <li>3.5L V6 (Auto + Manual)</li>
               <li>2.7L I4 (Auto)</li>
-              <li>Magnuson Supercharger</li>
+             
           </ul>
           <!-- box 1 content -->
+     
       </div>
+      <div class="footer" align="center"><strong style="font-size: 24px;">$500</strong></div> <!-- New footer content with adjusted font size -->
   </section>
+
+
+
+
   <section>
       <h3 class="heading">Heading 2</h3>
       <div class="padded">
           <!-- box 2 content -->
       </div>
+      <div class="footer">Footer content</div> <!-- New footer content -->
   </section>
   <section>
       <h3 class="heading">Heading 3</h3>
       <div class="padded">
           hello<!-- box 3 content -->
       </div>
+      <div class="footer">Footer content</div> <!-- New footer content -->
   </section>
 </div>
+
+
 
 
 <style>
 /* container */
 .padded-boxes {
-    display:flex;
-    flex-wrap:wrap;
-    gap:2rem;
-    justify-content: ; /* Center horizontally */
-    width: 200%; /* Ensure the container takes full width */
-    
-    
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  flex-wrap: wrap; /* Allow columns to wrap if needed */
 }
 
 /* boxes */
 .padded-boxes > * {
-  
-    width:100%;
-    background:#eee;
-    border-radius:.4rem;
-
-    max-width: 330px; /* Set maximum width if needed */
-    background: #eee;
-    border-radius: .4rem;
-    margin-bottom: 2rem; /* Add some bottom margin for spacing */
-    
+  width:100%;
+  border-radius:.4rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 10px; /* Optional: added for rounded corners */
+  max-width: 330px; /* Set maximum width if needed */
+  border-radius: .4rem;
+  margin-bottom: 2rem; /* Add some bottom margin for spacing */
+  margin-right: 2rem; /* Add margin between the boxes */
 }
 
 /* headings */
 .padded-boxes .heading {
-    background:#f97171;
+    background:#e7a11f;
     margin:0;
-    padding:1rem;
+    padding:.1rem 1rem;
     border-top-left-radius:.4rem;
     border-top-right-radius:.4rem;
 }
 
+/* footer */
+.padded-boxes .footer {
+    background:#e7a11f; /* Same background as heading */
+    margin:0;
+    padding:.1rem 1rem;
+    border-bottom-left-radius:.4rem;
+    border-bottom-right-radius:.4rem;
+    color: inherit;
+    
+}
 /* padded content */
 .padded-boxes .padded {
-    padding:.1rem 1rem;
+    padding:.1rem 2rem;
+}
+
+.padded-boxes .padded img {
+    width: 100%; /* Ensure the image fills the entire width of its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 
+
 </style>
+
+
+
+
+
+
+
