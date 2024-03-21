@@ -50,22 +50,16 @@ header_transparent: true
 
 
 <!----------------------------------------------------------------------------------------->
-Test
+space
+
 
 <div class="padded-boxes">
   <section>
       <h3 class="heading" align="center">2016-2023<br>Toyota Tacoma</h3>
       <div class="padded">
-        <div class="image-container">
-          <img src="/assets/tacoma/joshua-yu-2IKm0aYkHPk-unsplash.jpg" alt="Toyota Tacoma Image" class="fill-image">
-
-
-
-          <ul style="list-style-type: circle;">
-              <li>3.5L V6 (Auto + Manual)</li>
-              <li>2.7L I4 (Auto)</li>
-             
-          </ul>
+          <img src="/assets/tacoma/9-3.webp" alt="Toyota Tacoma Image" >
+        
+    
           <!-- box 1 content -->
      
       </div>
@@ -101,6 +95,9 @@ Test
   display: flex;
   justify-content: center; /* Center columns horizontally */
   flex-wrap: wrap; /* Allow columns to wrap if needed */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Hide any overflow */
 }
 
 /* boxes */
@@ -139,12 +136,16 @@ Test
     padding:.1rem 2rem;
 }
 
-.padded-boxes .padded img {
-    width: 100%; /* Ensure the image fills the entire width of its container */
-    height: auto; /* Maintain aspect ratio */
+.padded-boxes .padded {
+  padding: 0; /* Reset padding */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  overflow: hidden; /* Clip overflowing content */
 }
 
-
+.padded img {
+  width: 330px; /* Set the width of the image */
+  height: 220px; /* Set the height of the image */
+}
 
 </style>
 
