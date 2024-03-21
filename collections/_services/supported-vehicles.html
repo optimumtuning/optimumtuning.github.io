@@ -25,54 +25,72 @@ hero:
 ---
 
 
-<style>
-  .contain {
-  
-    display: flex;
-    justify-content: center; /* Center columns horizontally */
-    
-  }
-
-  .column {
-    width:100%; /* Adjust the width as necessary */
-    padding: 1%; /* Adjust padding as necessary */
-    box-sizing: border-box;
-  }
-
-  .column-content {
-    padding: 20%; /* Increased padding inside the boxes */
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    border-radius: 10px; /* Optional: added for rounded corners */
-    width: 100%;
-    
-  }
-  
-</style>
-
-
-<div class="contain">
-  <!-- Column 1 -->
-  <div class="column">
-    <div class="column-content">
-      <h2>Column 1 Title</h2>
-      <p>Some text for column one...</p>
-    </div>
-  </div>
-
-  <!-- Column 2 -->
-  <div class="column">
-    <div class="column-content">
-      <h2>Column 2 Title</h2>
-      <p>Some text for column two...</p>
-    </div>
-  </div>
-  
-  <!-- Column 3 -->
-  <div class="column">
-    <div class="column-content">
-      <h2>Column 3 Title</h2>
-      <p>Some text for column three...</p>
-    </div>
-  </div>
+<div class="padded-boxes">
+  <section>
+      <h3 class="heading" align="center">2016-2023<br>Toyota Tacoma</h3>
+      <div class="padded">
+          <ul style="list-style-type: circle;">
+              <li>3.5L V6 (Auto + Manual)</li>
+              <li>2.7L I4 (Auto)</li>
+              <li>Magnuson Supercharger</li>
+          </ul>
+          <!-- box 1 content -->
+      </div>
+  </section>
+  <section>
+      <h3 class="heading">Heading 2</h3>
+      <div class="padded">
+          <!-- box 2 content -->
+      </div>
+  </section>
+  <section>
+      <h3 class="heading">Heading 3</h3>
+      <div class="padded">
+          hello<!-- box 3 content -->
+      </div>
+  </section>
 </div>
+
+
+<style>
+/* container */
+.padded-boxes {
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;
+    justify-content: ; /* Center horizontally */
+    width: 200%; /* Ensure the container takes full width */
+    
+    
+}
+
+/* boxes */
+.padded-boxes > * {
+  
+    width:100%;
+    background:#eee;
+    border-radius:.4rem;
+
+    max-width: 330px; /* Set maximum width if needed */
+    background: #eee;
+    border-radius: .4rem;
+    margin-bottom: 2rem; /* Add some bottom margin for spacing */
+    
+}
+
+/* headings */
+.padded-boxes .heading {
+    background:#f97171;
+    margin:0;
+    padding:1rem;
+    border-top-left-radius:.4rem;
+    border-top-right-radius:.4rem;
+}
+
+/* padded content */
+.padded-boxes .padded {
+    padding:.1rem 1rem;
+}
+
+
+</style>
