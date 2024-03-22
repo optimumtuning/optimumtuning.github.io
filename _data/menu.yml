@@ -3,7 +3,7 @@ main:
     url: /
     weight: 1
   - name: Tuning
-    url: /services/
+    url: /tabs/tuning/
     weight: 1
     child:
       - name: "Supported Vehicles" #Web Development

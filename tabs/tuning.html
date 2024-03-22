@@ -1,18 +1,16 @@
 ---
 layout: default
+
 header_transparent: true
 ---
 <div class="hero-wrapper">
   <div class="hero-image">
     <div class="hero-text">
-      <h1><strong>Optimum Tuning</strong></h1>
-      <h3 style="color: rgb(201, 201, 201);">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong>. </h3>
+        <h1><strong>Tuning Services</strong></h1>
+        <h3 style="color: rgb(201, 201, 201);">Unleashed the full potential of your vehicle. </h3>
     </div>
   </div>
 </div>
-
-
-
 
 
 <style>
@@ -36,7 +34,7 @@ header_transparent: true
 .hero-text h3 {
   animation: slideUp 1s ease; /* Animation with 1 second duration for h3 */
   animation-fill-mode: both;
-  animation-delay: .65s; /* Delay the animation start for h3 by 1 second */
+  animation-delay: .5s; /* Delay the animation start for h3 by 1 second */
 }
 
 
@@ -57,52 +55,36 @@ header_transparent: true
   }
 
 
+
 /* Other styles remain the same */
 .hero-text {
-text-align: left;
-position: absolute;
-top: 40%;
-left: 5%;
-color: white;
-overflow: hidden;
-
-
+  position: absolute;
+  top: 50%; /* Position the text at the vertical center */
+  left: 50%; /* Position the text at the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
+  color: white;
+  overflow: hidden;
 }
 
-
-body, html {
-  height: 100%;
-}
 
 /* The hero image */
 .hero-image {
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
-url("/assets/hero/car32546.jpg");
-
+url("/assets/hero/moutainsunset.jpeg");
 /* Set a specific height */
-height: 70vh;
-
+height: 45vh;
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+background-position: 50% 40%; /* Adjust background position: horizontal 50%, vertical 80px from the top */
+
+
 
 animation: zoomOut 1.5s ease; /* Animation duration and easing */
 }
-
-/* Place text in the middle of the image */
-.hero-text {
-text-align: left;
-position: absolute;
-top: 40%;
-left: 5%;
-
-color: white;
-
-}
-  
 
 
 </style>
