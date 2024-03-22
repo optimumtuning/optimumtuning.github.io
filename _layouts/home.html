@@ -1,42 +1,44 @@
 ---
 layout: default
+header_transparent: true
 ---
 <div class="hero-image">
   <div class="hero-text">
-      <div>
-          <h1 class="slide-up">Optimum Tuning</h1>
-          <h3 class="slide-up" style="animation-delay: 0.4s;">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong></h3>
-          <h3 class="slide-up" style="animation-delay: 1.s;">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong></h3>
-      </div>
+    <h1><strong>Optimum Tuning</strong></h1>
+    <h3 style="color: rgb(201, 201, 201);">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong>. </h3>
   </div>
-</div>
+</div> 
 
 <style>
-
-@keyframes slideUp {
-  0% {
-      transform: translateY(100%);
-      opacity: 0; /* Initially hidden */
-  }
-  100% {
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
       transform: translateY(0);
-      opacity: 1; /* Fully visible */
+    }
   }
+
+  .hero-text h1 {
+  animation: slideUp 1s ease; /* Animation with 1 second duration for h1 */
+  animation-fill-mode: both;
+  animation-delay: 0.2s; /* Delay the animation start for h1 by 0.5 seconds */
 }
 
-.hero-text h3.slide-up,.hero-text h1.slide-up {
-  animation: slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) 0.05s both; /* Delay for h1 */
+.hero-text h3 {
+  animation: slideUp 1s ease; /* Animation with 1 second duration for h3 */
+  animation-fill-mode: both;
+  animation-delay: .6s; /* Delay the animation start for h3 by 1 second */
 }
 
-.hero-text h3.slide-up {
-  animation: slideUp 1s cubic-bezier(0.65, 0, 0.1, 1) 0.7s both; /* Delay for h3 */
-}
 
 
 
 @keyframes zoomOut {
 from {
-  transform: scale(1.2); /* Start with a larger scale */
+  transform: scale(1.3); /* Start with a larger scale */
 }
 to {
   transform: scale(1); /* End with the original scale */
@@ -76,9 +78,7 @@ background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 
-
-
-animation: zoomOut 1s ease; /* Animation duration and easing */
+animation: zoomOut 1.5s ease; /* Animation duration and easing */
 }
 
 /* Place text in the middle of the image */
