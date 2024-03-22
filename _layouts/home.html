@@ -1,235 +1,97 @@
 ---
 layout: default
-body_classes: page-home
 ---
-
-{% if page.hero.enabled %}
-  {% include framework/hero.html
-    heading=page.hero.heading
-    sub_heading=page.hero.sub_heading
-    background_image=page.hero.background_image
-    background_image_blend_mode=page.hero.background_image_blend_mode
-    background_color=page.hero.background_color
-    background_gradient=page.hero.background_gradient
-    text_color=page.hero.text_color
-    fullscreen_mobile=page.hero.fullscreen_mobile
-    fullscreen_desktop=page.hero.fullscreen_desktop
-    height=page.hero.height
-    buttons=page.hero.buttons
-  %}
-{% else %}
-  <div class="section">
-    <div class="container">
-    {% include framework/title.html
-      fa_icon=page.fa_icon
-      icon=page.icon
-      title=page.title
-      description=page.description
-      image=page.image
-    %}
-    </div>
-  </div>
-{% endif %}
-
-{% assign cards = site.services | sort: 'date' | reverse %}
-{% assign limit = page.services.limit | default: 3 %}
-{% assign sort_by = page.services.sort | default: 'date' %}
-{% assign columns =  page.services.columns | default: 3 %}
-{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
-
-{% if page.services.enabled %}
-  <div class="section section-base-bg-2">
-    <div class="container">
-      <div class="row">
-
-        {% include framework/grid-header.html
-          heading=page.services.heading
-          sub_heading=page.services.sub_heading
-          align="center"
-        %}
-        
-        {% for card in cards limit: limit %}
-
-          {% assign url = card.url %}
-          {% if page.services.prevent_click %}
-            {% assign url = null %}
-          {% endif %}
-          
-          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-services.html 
-              title=card.title 
-              description=card.description
-              
-              fa_icon=card.fa_icon
-              
-
-              url=url 
-              weight=card.weight
-            %}
-          </div>
-        {% endfor %}
-
-        {% include framework/grid-footer.html 
-          view_more_button_text=page.services.view_more_button_text
-          view_more_button_link=page.services.view_more_button_link
-          align="center"
-        %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if page.intro.enabled %}
-  <div class="section">
-    <div class="container">
-      {% include framework/info.html
-      heading=page.intro.heading
-      sub_heading=page.intro.sub_heading
-      align=page.intro.align
-      features=page.intro.features
-      buttons=page.intro.buttons
-      image=page.intro.image
-      %}
-    </div>
-  </div>
-{% endif %}
-
-
-{% if page.partners.enabled %}
-{% assign partners = site.data.partners %}
-{% assign partners_limit = page.partners.limit | default: 4 %}
-{% assign partners_sort = page.partners.sort | default: 'weight' %}
-{% if partners.size > 0 %}
-<div class="section pt-0 partners">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      {% for partner in partners limit: partners_limit %}
-      <div class="col-4 col-lg-2 text-center mb-1 mt-1">
-        <img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}" />
+<div class="hero-image">
+  <div class="hero-text">
+      <div>
+          <h1 class="slide-up">Optimum Tuning</h1>
+          <h3 class="slide-up" style="animation-delay: 0.4s;">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong></h3>
+          <h3 class="slide-up" style="animation-delay: 1.s;">Mobile tuning service based in <strong>Grand Rapids, Michigan</strong></h3>
       </div>
-      {% endfor %}
-    </div>
   </div>
 </div>
-{% endif %}
-{% endif %}
 
+<style>
 
-{% assign cards = site.projects | sort: 'date' | reverse %}
-{% assign limit = page.projects.limit | default: 2 %}
-{% assign sort_by = page.projects.sort | default: 'date' %}
-{% assign columns =  page.projects.columns | default: 2 %}
-{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
+@keyframes slideUp {
+  0% {
+      transform: translateY(100%);
+      opacity: 0; /* Initially hidden */
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1; /* Fully visible */
+  }
+}
 
-{% if page.projects.enabled %}
-  <div class="section section-base-bg-2">
-    <div class="container">
-      <div class="row">
+.hero-text h3.slide-up,.hero-text h1.slide-up {
+  animation: slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) 0.05s both; /* Delay for h1 */
+}
 
-        {% include framework/grid-header.html
-          heading=page.projects.heading
-          sub_heading=page.projects.sub_heading
-          align="center"
-        %}
-        
-        {% for card in cards limit: limit %}
-
-          {% assign url = card.url %}
-          {% if page.projects.prevent_click %}
-            {% assign url = null %}
-          {% endif %}
-
-          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-projects.html 
-              title=card.title 
-              description=card.description
-              thumbnail=card.thumbnail
-              url=url 
-              weight=card.weight
-            %}
-          </div>
-        {% endfor %}
-
-        {% include framework/grid-footer.html 
-          view_more_button_text=page.projects.view_more_button_text
-          view_more_button_link=page.projects.view_more_button_link
-          align="center"
-        %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
+.hero-text h3.slide-up {
+  animation: slideUp 1s cubic-bezier(0.65, 0, 0.1, 1) 0.7s both; /* Delay for h3 */
+}
 
 
 
-{% if page.outro.enabled %}
-<div class="section">
-  <div class="container">
-    {% include framework/info.html
-    heading=page.outro.heading
-    sub_heading=page.outro.sub_heading
-    align=page.outro.align
-    features=page.outro.features
-    buttons=page.outro.buttons
-    image=page.outro.image
-    %}
-  </div>
-</div>
-{% endif %}
+@keyframes zoomOut {
+from {
+  transform: scale(1.2); /* Start with a larger scale */
+}
+to {
+  transform: scale(1); /* End with the original scale */
+}
+}
 
-{% assign cards = site.posts | sort: 'date' | reverse %}
-{% assign limit = page.posts.limit | default: 2 %}
-{% assign sort_by = page.posts.sort | default: 'date' %}
-{% assign columns =  page.posts.columns | default: 2 %}
-{% capture columns %}col-lg-{{ 12 | divided_by:columns }}{% endcapture %}
-{% if sort_by == 'weight' %}
-  {% assign cards = cards | sort: 'weight' %}
-{% endif %}
 
-{% if page.posts.enabled %}
-  <div class="section section-base-bg-2">
-    <div class="container">
-      <div class="row">
+/* Other styles remain the same */
+.hero-text {
+text-align: left;
+position: absolute;
+top: 40%;
+left: 5%;
+color: white;
+overflow: hidden;
 
-        {% include framework/grid-header.html
-          heading=page.posts.heading
-          sub_heading=page.posts.sub_heading
-          align="center"
-        %}
-        
-        {% for card in cards limit: limit %}
 
-          {% assign url = card.url %}
-          {% if page.posts.prevent_click %}
-            {% assign url = null %}
-          {% endif %}
-          
-          <div class="col-12 col-md-4 {{ columns }} mb-3 {% if forloop.first %}mt-0 {% endif %} {% if forloop.last %}mb-0 {% endif %}">
-            {% include theme/cards/card-posts.html 
-              title=card.title 
-              description=card.description
-              thumbnail=card.thumbnail
-              url=url 
-              weight=card.weight
-            %}
-          </div>
-        {% endfor %}
+}
 
-        {% include framework/grid-footer.html 
-          view_more_button_text=page.posts.view_more_button_text
-          view_more_button_link=page.posts.view_more_button_link
-          align="center"
-        %}
 
-    </div>
-  </div>
-</div>
-{% endif %}
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
+url("/assets/hero/car32546.jpg");
+
+/* Set a specific height */
+height: 60%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+
+
+animation: zoomOut 1s ease; /* Animation duration and easing */
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: absolute;
+top: 40%;
+left: 5%;
+
+color: white;
+
+}
+  
+
+
+</style>
