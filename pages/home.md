@@ -9,7 +9,7 @@ meta_title: Jekyll Advance - Premium Jekyll Theme
 hero:
   enabled: true
   heading: "Optimum Tuning"
-  sub_heading: "We are bssed in Grand Rapids but cover " #"Authorized YotaWerx Tuning Partner"
+  sub_heading: "We are based in Grand Rapids but cover the state of Michigan. " #"Authorized YotaWerx Tuning Partner"
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: false
@@ -37,7 +37,7 @@ hero:
         style: "light"
 
 services:
-  enabled: true
+  enabled: false
   heading: "Tuning"
   sub_heading: ""
   limit: 6
