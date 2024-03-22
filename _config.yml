@@ -84,7 +84,7 @@ exclude:
 # -------------------
 # Theme Config
 # --------------------
-title: "Jekyll Advance"
+title: "Optimum Tuning"
 category_dir: category
 
 colors:
@@ -124,7 +124,7 @@ fonts:
   logo: "Lato"
 
 logo:
-  logo_text: "Jekyll Advance"
+  logo_text: "Optimum Tuning"
   logo_image: assets/images/logo/black-ot.png
   logo_image_mobile: assets/images/logo/black-ot.png
   logo_image_invert: assets/images/logo/white-ot-invert.png
@@ -142,10 +142,10 @@ header:
   fixed: true
 
 open_graph:
-  meta_opengraph_type: "website"
-  meta_twitter_card: "summary"
-  meta_twitter_site: "@zerostaticio"
-  meta_twitter_creator: "@zerostaticio"
+  meta_opengraph_type: ""
+  meta_twitter_card: ""
+  meta_twitter_site: ""
+  meta_twitter_creator: ""
 
 darkmode:
   enable_dark_mode: true
