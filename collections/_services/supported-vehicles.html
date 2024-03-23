@@ -57,12 +57,12 @@ header_transparent: true
 
 /* Other styles remain the same */
 .hero-text {
-text-align: left;
-position: absolute;
-top: 40%;
-left: 5%;
-color: white;
-overflow: hidden;
+  position: absolute;
+  top: 50%; /* Position the text at the vertical center */
+  left: 50%; /* Position the text at the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
+  color: white;
+  overflow: hidden;
 }
 
 
@@ -72,13 +72,13 @@ overflow: hidden;
 background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), 
 url("/assets/hero/autostradamountain.jpeg");
 /* Set a specific height */
-height: 45vh;
+height: 40vh;
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
-background-position: 50% 50%; /* Adjust background position: horizontal 50%, vertical 80px from the top */
+background-position: 50% 60%; /* Adjust background position: horizontal 50%, vertical 80px from the top */
 
 
 
@@ -86,17 +86,7 @@ animation: zoomOut 1.5s ease; /* Animation duration and easing */
 }
 
 
-/* Place text in the middle of the image */
-.hero-text {
-position: absolute;
-
-color: white;
-transform: translate(100%, 20%);
-
-}
 </style>
-
-
 
 
 
@@ -109,7 +99,7 @@ transform: translate(100%, 20%);
 
 <!----------------------------------------------------------------------------------------->
 
-<div style="margin-top: 40px;">
+<div style="margin-top: 60px;">
   <section>
 
 <div class="padded-boxes">
