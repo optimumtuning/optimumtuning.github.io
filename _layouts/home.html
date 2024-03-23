@@ -106,26 +106,35 @@ color: white;
   .support-container {
     text-align: center;
   }
-  .title {
-    font-size: 2em;
+  .support-title {
+    font-size: 3.5em;
     margin: 20px 0;
   }
+    .support-subtitle {
+    font-size: 1.5em;
+    margin: 20px 0;
+    margin-top: -20px;
+  }
+
   .supported-vehicles {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
+    
   }
   .supported-vehicles .icon {
     margin-bottom: 10px;
     display: flex;
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 20px;
     margin: 0 auto 0px;
     border-radius: 10px;
-    max-width: 200px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
+    transition: transform 0.3s ease; /* Transition for smooth scaling of the HOVER*/
   }
   .supported-vehicles .icon img {
     max-width: 100%;
@@ -141,10 +150,10 @@ color: white;
     margin-bottom: 5px;
     color: #585858;
   }
-  .supported-vehicles a {
-    text-decoration: none;
-    color: blue;
-  }
+  .supported-vehicles .benefit {
+  margin: 0 30px; /* Adjust this value to set the desired space between columns */
+}
+ 
 /* BUTTON PORTION */
 
   .button-container {
@@ -172,12 +181,18 @@ color: white;
       background-color: #2866c3; /* Darker blue */
     }
 
+      /* Hover effect for images */
+  .supported-vehicles .icon:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+  }
+
 </style>
 </head>
 <body>
 
   <div class="support-container">
-    <div class="title"><strong>Supported Vehicles</strong></div>
+    <div class="support-title"><strong>Supported Vehicles</strong></div>
+    <div class="support-subtitle">We support 6 different Toyota models <br> in addition to Lexus GX line.</div>
     
     <div class="supported-vehicles">
       
@@ -201,7 +216,7 @@ color: white;
       
       <div class="benefit">
         <div class="icon" style="width: 200px; height: 200px;"><img src="/assets/home-supported-vehicles/lexusgx460silver.webp"></div>
-        <div class="title">Toyota FJ Cruiser</div>
+        <div class="title">Lexus GX460/470</div>
         <div class="description">Let's start the next adventure.</div>
       </div>
     </div>
@@ -227,10 +242,10 @@ color: white;
 <div style="margin-top: 60px;"></div>
 
 <style>
-  .container {
+  .why-container {
     text-align: center;
   }
-  .title {
+  .why-title {
     font-size: 2em;
     margin: 20px 0;
   }
@@ -283,8 +298,8 @@ color: white;
 </head>
 <body>
 
-<div class="container">
-  <div class="title"><strong>Why tune Your Toyota/Lexus?</strong></div>
+<div class="why-container">
+  <div class="why-title"><strong>Why tune Your Toyota/Lexus?</strong></div>
   
   <div class="benefits">
     
