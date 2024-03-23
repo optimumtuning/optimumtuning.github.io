@@ -92,8 +92,12 @@ color: white;
 
 <!----------------------------------------------WHY TUNE YOUR TOYOTA/LEXUS-------------------->
 
-<div style="margin-top: 60px;"></div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota/Lexus Tuning</title>
 <style>
   .container {
     text-align: center;
@@ -113,24 +117,21 @@ color: white;
     box-sizing: border-box;
   }
   .benefit-icon {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100px;
     height: 100px;
-    margin: 0 auto 10px;
+    margin-bottom: 10px;
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    /* If you want to make sure it's a perfect square regardless of screen size */
-    /* You can add a max-width and max-height equal to the width and height */
-    max-width: 100px;
-    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure image doesn't overflow */
   }
   .benefit-icon img {
     max-width: 100%;
     max-height: 100%;
+    display: block; /* Fix any potential inline spacing issues */
   }
   .benefit-title {
     font-size: 1.5em;
@@ -148,43 +149,36 @@ color: white;
 <body>
 
 <div class="container">
-  <div class="title"><strong>Why tune Your Toyota/Lexus?</strong></div>
+  <div class="title"><strong>Why Tune Your Toyota/Lexus?</strong></div>
   
   <div class="benefits">
     
     <div class="benefit">
-      <div class="benefit-icon"><img src="/assets/supported-vehicles/tundrabuild.jpg" ></div>
+      <div class="benefit-icon"><img src="/assets/home-why-icon/throttle-body.png" alt="Throttle Body Icon"></div>
       <div class="benefit-title">Better Throttle Response</div>
       <div class="benefit-description">No more stock throttle lag</div>
     </div>
     
     <div class="benefit">
-      <div class="benefit-icon"><img src="/assets/home-why-icon/gear.png" ></div>
+      <div class="benefit-icon"><img src="/assets/home-why-icon/gear.png" alt="Gear Icon"></div>
       <div class="benefit-title">Eliminate Gear Hunting</div>
       <div class="benefit-description">Smoother shift points to match throttle</div>
     </div>
     
     <div class="benefit">
-      <div class="benefit-icon"><img src="/assets/home-why-icon/speedometer-color.png/" alt="Icon 3"></div>
+      <div class="benefit-icon"><img src="/assets/home-why-icon/speedometer-color.png" alt="Speedometer Icon"></div>
       <div class="benefit-title">Linear Power Curve</div>
       <div class="benefit-description">Power and torque delivered earlier</div>
     </div>
     
     <div class="benefit">
-      <div class="benefit-icon"><img src="/assets/home-why-icon/piston.png/" alt="Icon 4"></div>
+      <div class="benefit-icon"><img src="/assets/home-why-icon/piston.png" alt="Piston Icon"></div>
       <div class="benefit-title">Add Power & Torque</div>
       <div class="benefit-description"><a href="link-to-dyno-data">See dyno data here</a></div>
     </div>
     
-
   </div>
-  
 </div>
 
 </body>
 </html>
-
-<img src="/assets/supported-vehicles/tundrabuild.jpg" alt="Toyota Tacoma Image" >
-
-
-<div style="margin-bottom: 60px;"></div>
