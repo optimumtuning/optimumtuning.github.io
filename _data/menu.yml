@@ -9,7 +9,7 @@ main:
       - name: "Supported Vehicles" #Web Development
         url: /services/supported-vehicles
       - name: "Custom Tuning" #UX
-        url: / #/services/custom-tuning
+        url: /services/custom-tuning #/services/custom-tuning
       - name: "Dyno Results" #Branding
         url: / #/tabs/services/dyno-results/
 
