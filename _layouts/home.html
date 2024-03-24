@@ -338,7 +338,6 @@ overflow: hidden;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
   }
   .yota {
     display: flex;
@@ -348,46 +347,44 @@ overflow: hidden;
   .yotawerx {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 180px;
+    align-items: center; /* Center align for all screen sizes */
+    margin-top: 20px; /* Adjust margin for all screen sizes */
   }
   .yotawerx .title {
-    font-size: 3em;
+    font-size: 2em; /* Adjust font size for all screen sizes */
     margin-bottom: 8px;
     line-height: 1;
-    max-width: 400px; /* Set the maximum width for the title */
-    text-align: left;
+    max-width: 90%; /* Set the maximum width for the title */
+    text-align: center; /* Center align for all screen sizes */
   }
   .yotawerx .description {
-    margin-top: 20px;
+    margin-top: 10px; /* Adjust margin for all screen sizes */
     color: #585858;
-    font-size: 1.5em;
-    max-width: 400px; /* Set the maximum width for the description */
-    text-align: left;
+    font-size: 1.2em; /* Adjust font size for all screen sizes */
+    max-width: 90%; /* Set the maximum width for the description */
+    text-align: center; /* Center align for all screen sizes */
   }
   .margin {
-    margin: 0 20px; /* Adjust this value to set the desired space between columns */
+    margin: 0 auto; /* Center align for all screen sizes */
   }
   .icon {
-    width: 500px; /* Set the width to your desired size */
-    height: 500px; /* Set the height to your desired size */
-    margin-bottom: 0px; /* Adjust margin as needed */
+    width: 80%; /* Set width to 80% of the container width */
+    max-width: 300px; /* Set max-width for larger screens */
+    height: auto; /* Let the height adjust according to the width */
+    margin-bottom: 20px; /* Adjust margin for all screen sizes */
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: none; /* Remove any max-width constraint */
-    max-height: none; /* Remove any max-height constraint */
   }
   .icon img {
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
   }
   /* BUTTON PORTION */
   .yota-button-container {
     display: flex; /* Enable flexbox */
-    justify-content: left; /* Center horizontally */
+    justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically (if you also want vertical centering) */
-  
   }
   .yota-button {
     background-color: #4285F4; /* Blue */
@@ -413,6 +410,7 @@ overflow: hidden;
   }
 </style>
 
+
 <div class="yota-container">
   <div class="yota">
     <div class="yotawerx">
@@ -430,3 +428,8 @@ overflow: hidden;
     </div>
   </div>
 </div>
+
+
+
+
+
