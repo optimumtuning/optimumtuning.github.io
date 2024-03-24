@@ -50,15 +50,7 @@ header_transparent: true
   }
 
 
-/* Other styles remain the same */
-.hero-text {
-text-align: left;
-position: absolute;
-top: 40%;
-left: 5%;
-color: white;
-overflow: hidden;
-}
+
 
 /* The hero image */
 .hero-image {
@@ -67,7 +59,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
 url("/assets/hero/car32546.jpg");
 
 /* Set a specific height */
-height: 75vh;
+height: 500px;
 
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
@@ -83,9 +75,9 @@ animation: zoomOut 1.5s ease; /* Animation duration and easing */
 text-align: left;
 position: absolute;
 top: 40%;
-left: 5%;
-
+left: 10%;
 color: white;
+overflow: hidden;
 }
 
 </style>
@@ -112,7 +104,7 @@ color: white;
   }
     .support-subtitle {
     font-size: 1.5em;
-    margin: 20px 0;
+    margin: 30px 0;
     margin-top: -20px;
   }
 
@@ -192,7 +184,7 @@ color: white;
 
   <div class="support-container">
     <div class="support-title"><strong>Supported Vehicles</strong></div>
-    <div class="support-subtitle">We support 6 different Toyota models <br> in addition to Lexus GX line.</div>
+    <div class="support-subtitle">We support 6 different Toyota models in addition to Lexus GX line.</div>
     
     <div class="supported-vehicles">
       
@@ -242,11 +234,11 @@ color: white;
 <div style="margin-top: 60px;"></div>
 
 <style>
-  .why-container {
+  .benefit-container {
     text-align: center;
   }
-  .why-title {
-    font-size: 2em;
+  .benefit-title {
+    font-size: 3em;
     margin: 20px 0;
   }
   .benefits {
@@ -279,7 +271,7 @@ color: white;
     max-width: 100%;
     max-height: 100%;
   }
-  .benefit-title {
+  .benefit-header {
     font-size: 1.5em;
     margin-bottom: 8px; /* Margin between title and description */
     line-height: 1; /* Adjust line height to make the lines closer */
@@ -289,41 +281,38 @@ color: white;
     margin-bottom: 5px;
     color: #585858;
     
-  }
-  .benefit a {
-    text-decoration: none;
-    color: blue; /* Adjust link color as necessary */
+  
   }
 </style>
 </head>
 <body>
 
-<div class="why-container">
-  <div class="why-title"><strong>Why tune Your Toyota/Lexus?</strong></div>
+<div class="benefit-container">
+  <div class="benefit-title"><strong>Why Tune Your Toyota/Lexus?</strong></div>
   
   <div class="benefits">
     
     <div class="benefit">
       <div class="benefit-icon"><img src="/assets/home-why-icon/throttle-body.png" ></div>
-      <div class="benefit-title">Better Throttle Response</div>
-      <div class="benefit-description">No more stock throttle lag</div>
+      <div class="benefit-header">Improve Throttle Response</div>
+      <div class="benefit-description">Remove stock throttle lag</div>
     </div>
     
     <div class="benefit">
       <div class="benefit-icon"><img src="/assets/home-why-icon/gear.png" ></div>
-      <div class="benefit-title">Eliminate Gear Hunting</div>
+      <div class="benefit-header">Eliminate Gear Hunting</div>
       <div class="benefit-description">Smoother shift points to match throttle</div>
     </div>
     
     <div class="benefit">
       <div class="benefit-icon"><img src="/assets/home-why-icon/speedometer-color.png" ></div>
-      <div class="benefit-title">Linear Power Curve</div>
-      <div class="benefit-description">Power and torque delivered earlier</div>
+      <div class="benefit-header">Linear Power Curve</div>
+      <div class="benefit-description">Optimum power and torque delivery</div>
     </div>
     
     <div class="benefit">
       <div class="benefit-icon"><img src="/assets/home-why-icon/piston.png" ></div>
-      <div class="benefit-title">Add Power & Torque</div>
+      <div class="benefit-header">Gain Power & Torque</div>
       <div class="benefit-description"><a href="link-to-dyno-data">See dyno data here</a></div>
     </div>
     
@@ -337,3 +326,102 @@ color: white;
 
 
 <div style="margin-bottom: 60px;"></div>
+
+
+<!----------------------------------------------YotaWerx-------------------->
+
+
+
+<style>
+  .yota-container {
+    text-align: center;
+  }
+  .yota {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .yotawerx {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 180px;
+  }
+  .yotawerx .title {
+    font-size: 3em;
+    margin-bottom: 8px;
+    line-height: 1;
+    max-width: 400px; /* Set the maximum width for the title */
+  }
+  .yotawerx .description {
+    margin-top: 20px;
+    color: #585858;
+    font-size: 1.5em;
+    max-width: 400px; /* Set the maximum width for the description */
+    text-align: left;
+  }
+  .margin {
+    margin: 0 20px; /* Adjust this value to set the desired space between columns */
+  }
+  .icon {
+    width: 500px; /* Set the width to your desired size */
+    height: 500px; /* Set the height to your desired size */
+    margin-bottom: 0px; /* Adjust margin as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none; /* Remove any max-width constraint */
+    max-height: none; /* Remove any max-height constraint */
+  }
+  .icon img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* BUTTON PORTION */
+  .button-container {
+    display: flex; /* Enable flexbox */
+    justify-content: left; /* Center horizontally */
+    align-items: center; /* Center vertically (if you also want vertical centering) */
+  
+  }
+  .button {
+    background-color: #4285F4; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Change as per preference */
+  }
+  /* Optional: styles for hover state */
+  .button:hover {
+    background-color: #2866c3; /* Darker blue */
+  }
+  /* Hover effect for images */
+  .icon:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+  }
+</style>
+
+<div class="yota-container">
+  <div class="yota">
+    <div class="yotawerx">
+      <div class="title">YotaWerx simply delivers more...</div>
+      <div class="description">More proven power AND better drivability. Don't settle for anything less!!</div>
+    </div>
+    <div class="margin">
+      <div class="icon"><img src="/assets/yotawerx_logo/3D_Yotawerx_Transparente800x300.png"></div>
+    </div>
+  </div>
+  <!-- Insert button here -->
+  <div class="button-container">
+    <a href="https://yotawerxtuning.com" target="_blank">
+      <button class="button">View</button>
+    </a>
+  </div>
+</div>
