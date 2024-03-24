@@ -347,43 +347,46 @@ overflow: hidden;
   .yotawerx {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align for all screen sizes */
+    align-items: left; /* Center align for all screen sizes */
     margin-top: 20px; /* Adjust margin for all screen sizes */
+    
   }
   .yotawerx .title {
     font-size: 2em; /* Adjust font size for all screen sizes */
     margin-bottom: 8px;
     line-height: 1;
-    max-width: 90%; /* Set the maximum width for the title */
-    text-align: center; /* Center align for all screen sizes */
+    max-width: 100%; /* Set the maximum width for the title */
+    text-align: left; /* Center align for all screen sizes */
   }
   .yotawerx .description {
     margin-top: 10px; /* Adjust margin for all screen sizes */
     color: #585858;
     font-size: 1.2em; /* Adjust font size for all screen sizes */
-    max-width: 90%; /* Set the maximum width for the description */
-    text-align: center; /* Center align for all screen sizes */
+    max-width: 100%; /* Set the maximum width for the description */
+    text-align: left; /* Center align for all screen sizes */
   }
-  .margin {
-    margin: 0 auto; /* Center align for all screen sizes */
-  }
+ 
   .icon {
-    width: 80%; /* Set width to 80% of the container width */
-    max-width: 300px; /* Set max-width for larger screens */
+    width: 100%; /* Set width to 80% of the container width */
+    max-width: 600px; /* Set max-width for larger screens */
     height: auto; /* Let the height adjust according to the width */
     margin-bottom: 20px; /* Adjust margin for all screen sizes */
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   .icon img {
     max-width: 100%;
     height: auto;
   }
+
+
+
   /* BUTTON PORTION */
   .yota-button-container {
     display: flex; /* Enable flexbox */
-    justify-content: center; /* Center horizontally */
+    justify-content: left; /* Center horizontally */
     align-items: center; /* Center vertically (if you also want vertical centering) */
   }
   .yota-button {
@@ -399,6 +402,7 @@ overflow: hidden;
     cursor: pointer;
     border-radius: 10px; /* Rounded corners */
     font-family: Arial, sans-serif; /* Change as per preference */
+    
   }
   /* Optional: styles for hover state */
   .yota-button:hover {
@@ -414,12 +418,12 @@ overflow: hidden;
 <div class="yota-container">
   <div class="yota">
     <div class="yotawerx">
-      <div class="title">YotaWerx simply delivers more...</div>
-      <div class="description">More proven power AND better drivability. Don't settle for anything less!!</div>
+      <div class="title">YotaWerx Tuning <br>Sets the Standards</div>
+      <div class="description">Unmatched Drivability, Power and Performance.</div>
       <!-- Move button container here -->
       <div class="yota-button-container">
         <a href="https://yotawerxtuning.com" target="_blank">
-          <button class="yota-button">View</button>
+          <button class="yota-button">YotaWerx</button>
         </a>
       </div>
     </div>
@@ -433,3 +437,4 @@ overflow: hidden;
 
 
 
+<div style="margin-bottom: 60px;"></div>
