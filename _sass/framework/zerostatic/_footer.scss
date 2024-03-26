@@ -160,6 +160,9 @@
           cursor: pointer;
   
           &:hover {
+            background: darken($primaryColor, 1%);
+          }
+          &:active { /* Apply darker background when button is clicked */
             background: darken($primaryColor, 10%);
           }
         }

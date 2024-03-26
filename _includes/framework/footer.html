@@ -59,34 +59,37 @@
             <input type="email" name="Email" placeholder="Email Address" style="width: 100%; margin-bottom: 10px;" required>
             <input type="submit" name="submit" value="Subscribe">
           </form>
+          <div id="successMessage" style="display: none; color: green;">Thank you for subscribing to our newsletter!</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDmm3RAxGMtkLYLY55C2XFX3wvM2pB4o0HW7PSXOaEMn8oCRmVyiFDKD-Vvy4PR1zp/exec'
-  const form = document.forms['newsletter-form']
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDmm3RAxGMtkLYLY55C2XFX3wvM2pB4o0HW7PSXOaEMn8oCRmVyiFDKD-Vvy4PR1zp/exec';
+  const form = document.forms['newsletter-form'];
+  const submitButton = form.querySelector('input[type="submit"]');
 
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
+    submitButton.disabled = true;
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         if (response.ok) {
-          alert('Thank you for subscribing to our newsletter!'); // Display a simple alert
-          form.reset(); // Reset the form after successful submission
+          alert('Thank you for subscribing to our newsletter!');
+          form.reset();
         } else {
-          alert('Submission failed. Please try again.'); // Display an alert for failed submission
+          alert('Submission failed. Please try again.');
+          submitButton.disabled = false;
         }
         console.log('Success!', response);
       })
       .catch(error => {
-        alert('An error occurred. Please try again later.'); // Display an alert for errors
+        alert('An error occurred. Please try again later.');
+        submitButton.disabled = false;
         console.error('Error!', error.message);
       })
-  })
+  });
+
 </script>
-
-
