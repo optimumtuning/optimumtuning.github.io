@@ -49,42 +49,44 @@
       </div>
       
       <!-- Newsletter form -->
-      <div class="col-12 col-md-4 d-flex justify-content-end"> <!-- Add 'justify-content-end' class to move the content to the right -->
+      <div class="col-12 col-md-4 d-flex justify-content-end">
         <div class="newsletter-form text-left">
-          <div style="margin-left: 5%;"> <!-- Add this div to contain the text you want to shift -->
+          <div style="margin-left: 5%;">
             <h2 style="margin-bottom: 5px; margin-top: 0px; font-size: 25px; font-weight: bold;">Connect with Us</h2>
-            <p style="margin-bottom: 15px; font-size: 15px; font-weight:;">Sign Up for promotions, events and updates.</p>
+            <p style="margin-bottom: 15px; font-size: 15px;">Sign Up for promotions, events, and updates.</p>
           </div>
-          <form id="newsletter-form" action="https://script.google.com/macros/s/AKfycbxir0BiBq3j84v9kTggOT9InzDXdDxo5JgF5PXkE3BWB11YB0ZfnPIs0xhtoNv20coN/exec" method="post">
-            <input type="email" name="email" id="email" placeholder="Email Address" style="width: 100%; margin-bottom: 10px;" required>
-            <input type="submit" name="submit" value="Subscribe" onclick="subscribe()">
+          <form name="newsletter-form">
+            <input type="email" name="Email" placeholder="Email Address" style="width: 100%; margin-bottom: 10px;" required>
+            <input type="submit" name="submit" value="Subscribe">
           </form>
-          <div id="subscribe-result"></div> <!-- Placeholder for displaying subscription result -->
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
 <script>
-  function subscribe() {
-    var email = document.getElementById("email").value;
-    
-    fetch('https://script.google.com/macros/s/AKfycbxir0BiBq3j84v9kTggOT9InzDXdDxo5JgF5PXkE3BWB11YB0ZfnPIs0xhtoNv20coN/exec', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: 'email=' + encodeURIComponent(email)
-    })
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("subscribe-result").innerHTML = data;
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-  }
-  </script>
-  
-  
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDmm3RAxGMtkLYLY55C2XFX3wvM2pB4o0HW7PSXOaEMn8oCRmVyiFDKD-Vvy4PR1zp/exec'
+  const form = document.forms['newsletter-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        if (response.ok) {
+          alert('Thank you for subscribing to our newsletter!'); // Display a simple alert
+          form.reset(); // Reset the form after successful submission
+        } else {
+          alert('Submission failed. Please try again.'); // Display an alert for failed submission
+        }
+        console.log('Success!', response);
+      })
+      .catch(error => {
+        alert('An error occurred. Please try again later.'); // Display an alert for errors
+        console.error('Error!', error.message);
+      })
+  })
+</script>
+
+

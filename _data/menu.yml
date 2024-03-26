@@ -6,10 +6,10 @@ main:
     url: /tabs/tuning/
     weight: 1
     child:
-      - name: "Supported Vehicles" #Web Development
+      - name: "Supported Vehicles" 
         url: /services/supported-vehicles
-      - name: "Custom Tuning" #UX
-        url: / #/services/custom-tuning
+#      - name: "Custom Tuning" #UX
+ #       url: / #/services/custom-tuning
       - name: "Dyno Results" #Branding
         url: / #/tabs/services/dyno-results/
 
