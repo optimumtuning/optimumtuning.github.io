@@ -2,7 +2,7 @@
 # Jekyll Config
 # --------------------
 baseurl: "" # This is the base hostname & path of your site
-url: "https://optimumtuning.github.io" # This is your site's url
+url: "https://optimumtuning.com" # This is your site's url
 
 
 permalink: pretty
