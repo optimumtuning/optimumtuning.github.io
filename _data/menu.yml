@@ -3,7 +3,7 @@ main:
     url: /
     weight: 1
   - name: Tuning
-    url: /tabs/tuning/
+    url: 
     weight: 1
     child:
       - name: "Supported Vehicles" 

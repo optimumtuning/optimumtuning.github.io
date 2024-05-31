@@ -86,7 +86,7 @@ exclude:
 # Theme Config
 # --------------------
 title: "Optimum Tuning"
-category_dir: category
+
 
 colors:
   #light-mode colors
@@ -155,8 +155,8 @@ darkmode:
   show_dark_mode_toggle_in_mobile_menu: true
 
 cookie_banner:
-  enabled: true
-  show_manage_cookies_at_bottom: true
+  enabled: false
+  show_manage_cookies_at_bottom: false
 
 analytics:
   disable_analytics_on_localhost: false # prevents polluting analytics data while developing but enabling can be useful
@@ -170,7 +170,7 @@ comments:
   commento:
     enabled: false # you must have a commento account and be on the correct domain. does not work locally.
   disqus:
-    shortname: "zerostatic" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
+    shortname: "" # Your disqus shortcode for example "zerostatic". leave this blank ie "" to disable.
 
 newsletter:
   mailchimp:
@@ -201,7 +201,7 @@ footer:
   #footer_tertiary_menu_title: "Other"
 
 bottom:
-  enable_bottom: true # show/hide the entire bottom (below the footer)
+  enable_bottom: false # show/hide the entire bottom (below the footer)
   enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
   copyright_text: "© 2023 Optimum Tuning LLC"
   show_rss_icon: false
